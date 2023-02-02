@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>1/3 to a million digits!</title>
+  </head>
+  <body style="max-width: 100vw; overflow:scroll;" onload="loaded()">
+     <h1>
+       1/3 to a million digits!
+    </h1>
+    <p id="thing" style="width: 90vw; margin-left: 5vw; word-wrap: break-word;" />
+    <script>
+      function loaded() {
+        let value = ""
+        for (let i = 0; i < 1000; i++) {
+          value += "3".repeat(100)
+          document.getElementById("thing").innerHTML = "0." + value
+        }
+      }
+    </script>
+    <p>
+      Please contact me at <a href="mailto:ash@pinea.dev">ash@pinea.dev</a> if you require more or less accuracy
+    </p>
+  </body>
+</html>
