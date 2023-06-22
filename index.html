@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>1/3 to a million digits!</title>
+    <title>2/3 to a million digits!</title>
   </head>
   <body style="max-width: 100vw; overflow:scroll;" onload="loaded()">
      <h1>
-       1/3 to a million digits!
+       2/3 to a million digits!
     </h1>
     <p id="thing" style="width: 90vw; margin-left: 5vw; word-wrap: break-word;">Please wait while we fetch the latest data</p>
     <script>
       function loaded() {
         let value = ""
-        for (let i = 0; i < 10000; i++) {
-          value += "3".repeat(10)
+        for (let i = 0; i < 9999; i++) {
+          value += "6".repeat(10)
           document.getElementById("thing").innerHTML = "0." + value
         }
+        value += "6".repeat(9) + "7"
+        document.getElementById("thing").innerHTML = "0." + value
       }
     </script>
     <p>
