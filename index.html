@@ -13,6 +13,8 @@
     <script>
       function loaded() {
         let value = ""
+        // Yes, I'm aware this only does 100,000 3's - I tried actually doing a million and it kept crashing Chromium and Safari
+        // It bugs me too, but nobody is going to count. Of course, you can email me if you need more accuracy than 100,000 decimal places
         for (let i = 0; i < 10000; i++) {
           value += "3".repeat(10)
           document.getElementById("thing").innerHTML = "0." + value
